@@ -10,12 +10,6 @@ cors = CORS(flask_app) # allow CORS for all domains on all routes.
 def index():
     return "Hello Flask ! this is a sample flask app !"
 
-'''@flask_app.route("/add/<num1>/<num2>") # adding 2 numbers
-def add_numbers(num1, num2):
-    sumNum = int(num1) + int(num2)
-    return f"this method will add numbers {num1} and {num2} ==> {sumNum}"
-    '''
-
 @flask_app.route("/generate") # adding 2 numbers
 @cross_origin()
 def generate_tweet():
